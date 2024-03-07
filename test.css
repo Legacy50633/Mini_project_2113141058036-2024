@@ -1,0 +1,35 @@
+.out{
+    display: grid;
+    grid-template-columns: 3;
+    margin-top: 200px;
+}
+
+.d1{
+    display: flex;
+    justify-content: center ;
+ 
+    font-weight: bolder; 
+
+
+}
+p{
+    font-size: 200px;
+}
+.d2{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+
+}
+.d3 {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#can{
+    text-decoration: none;
+    color: red;
+    font-size: 2em;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow Generator</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./Boxv1.css" />
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Chroma Plast</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Feedback.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./About.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Actions
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <li><a class="dropdown-item" href="./index.html">Restart</a></li>
+            <li><a class="dropdown-item" href="https://github.com/Legacy50633">Source Codes</a></li>
+            <li><a class="dropdown-item" href="./Feedback.html">FeedBack</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<br><br>
+    <div class="container" style="margin-top: 100px;">
+      <div class="result">
+        <div id="element"></div>
+      </div>
+      <div class="sliders">
+        <div class="slider-wrapper">
+          <label for="h-shadow">Horizontal Shadow:</label>
+          <input type="range" id="h-shadow" max="100" min="-100" value="0" />
+        </div>
+        <div class="slider-wrapper">
+          <label for="v-shadow">Vertical Shadow:</label>
+          <input type="range" id="v-shadow" max="100" min="-100" value="0" />
+        </div>
+        <div class="slider-wrapper">
+          <label for="blur-radius">Blur Radius:</label>
+          <input type="range" id="blur-radius" max="100" min="0" value="0" />
+        </div>
+        <div class="slider-wrapper">
+          <label for="spread-radius">Spread Radius:</label>
+          <input type="range" id="spread-radius" max="50" min="-50" value="0" />
+        </div>
+        <div class="slider-wrapper">
+          <label for="shadow-color">Shadow Color:</label>
+          <input type="color" id="shadow-color" />
+        </div>
+        <div class="slider-wrapper">
+          <label for="shadow-color-opacity">Shadow Color Opacity:</label>
+          <input
+            type="range"
+            id="shadow-color-opacity"
+            max="1"
+            min="0"
+            step="0.1"
+            value="1"
+          />
+        </div>
+        <div class="input-wrapper">
+          <label for="shadow-inset">Inset Shadow:</label>
+          <input type="checkbox" id="shadow-inset" />
+        </div>
+      </div>
+      <div class="code-wrapper">
+        <textarea rows="2" id="code"></textarea>
+        <button onclick="copyCode()">Copy</button>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="box.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
